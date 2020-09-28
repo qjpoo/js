@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var year = prompt("请输入您的出生年份: ")
+        var currentDate = new Date()
+        var currentYear = currentDate.getFullYear()
+        console.log(typeof currentYear);
+        var older;
+        older = currentYear - parseInt(year); // 是减法,可以不用转化成整形
+        alert('您的岁数是: ' + older)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
