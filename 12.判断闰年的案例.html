@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var year = prompt('请输入年份: ')
+        if (parseInt(year) % 4 == 0 && parseInt(year) % 100 != 0 || parseInt(year) % 400 == 0) {
+            alert(year + '是润年!')
+        }else {
+            alert(year + '不是润年!')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
