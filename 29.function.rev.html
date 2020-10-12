@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 反转数组元素
+        // var arr = ['张飞', '小明', '小王', '小华', '小红', '小张']
+        // var newArr = []
+        // for (var i = 0; i < arr.length; i++) {
+        //     newArr[newArr.length] = arr[arr.length - i - 1]
+        // }
+        // console.log(newArr);
+
+        function reverse(arr) {
+            var newArr = [];
+            for (var i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i]
+            }
+            return newArr
+        }
+
+        console.log(reverse(['小明', '小王', '小张', '小兵', '小李']));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
