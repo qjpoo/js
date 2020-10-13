@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. push 向后追加元素,返回值是新的数组的长度, 修改原数组
+        var a = ['a', 'b', 1, 2, 3, 4]
+        console.log(a.push(5, 6, 'hello')) // 9
+        console.log(a);
+        
+        // 2. unshift 向前追加元素, 返回 值 是新数组的长度, 修改原数组
+        var b = ['a', 'b', 1, 2, 3, 4]
+        console.log(b.unshift(5, 6, 'hello'))
+        console.log(b);
+
+        // 3. pop 在后面删除一个元素, 返回值是删除的元素值 , 修改原数组
+        var c = [1, 2, 3, 4]
+        console.log(c.pop())
+        console.log(c);
+        
+        // 4. shift 在第一个元素, 返回值是删除的元素值, 修改原数组
+        var d = [1, 2, 3, 4]
+        console.log(d.shift())
+        console.log(d);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

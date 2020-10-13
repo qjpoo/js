@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function countDown(time) {
+            var currentTime = +new Date() // 当前的时间毫秒数
+            var userTime = +new Date(time) // 用户传过来的时间秒数
+            var sub = (userTime - currentTime) / 1000 // 转化成秒
+            console.log(sub);
+
+            var d = parseInt(sub / 60 / 60 / 24) // 天
+            d = d < 10 ? '0' + d : d
+            var h = parseInt(sub / 60 / 60 % 24) // 小时
+            h = h < 10 ? '0' + h : h
+            var m = parseInt(sub / 60 % 60 ) // 分
+            m = m < 10 ? '0' + m : m
+            var s = parseInt(sub % 60 ) // 秒
+            s = s < 10 ? '0' + s : s
+            return d + '天' + h + '小时' + m + '分' + s + '秒'
+        }
+
+        var ret = countDown('2020-10-14 00:00:00')
+        console.log(ret);
+        var d = new Date()
+        console.log('当前时时间: ' + d);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 翻转数组
+      var newArray = [];
+      function reverse(arr) {
+        if (arr instanceof Array) {
+          for (var i = 0; i < arr.length; i++) {
+            newArray[newArray.length] = arr[arr.length - i - 1];
+          }
+          return newArray;
+        } else {
+          console.log("ERROR ! 必需是一个数组");
+        }
+      }
+      var rtArray = reverse([1, 2, 3, 4]);
+      console.log(rtArray);
+      var rtArray1 = reverse(1, 2, 3, 4);
+      console.log(rtArray1);
+    </script>
+  </head>
+  <body></body>
+</html>
