@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 字面量创建对象
+        // var obj = {};
+        var o = {
+            name: 'chiling',
+            age: 48,
+            sex: 'w',
+            sayHi: function() {
+                console.log('1111111');
+            }
+        }
+
+        // 调用属性
+        console.log(o.name);
+        console.log(o['age']);
+
+        // 调用方法
+        o.sayHi();
+
+
+
+        // -------- new Object
+        var obj = new Object()
+        obj.name = 'qujian';
+        obj.age = 18;
+        obj.sayHi = function() {
+            console.log('hi ~');
+        }
+        console.log(obj.age);
+        console.log(obj['name']);
+        obj.sayHi()
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

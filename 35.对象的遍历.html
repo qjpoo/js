@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = {
+            name: 'chiling',
+            age: 18,
+            sex: '女',
+            sayHi: function() {
+                console.log('Hi ~');
+            }
+        }
+
+        for (var v in obj) {
+            console.log(v + '--------->' + obj.v); // v为属性名
+            console.log(v + '--------->' + obj[v]); // v为属性名 obj[v] 属性性, 一定要这么写
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

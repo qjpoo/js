@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Start(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(song) {
+                console.log(this.name + '唱' + song);
+            }
+        }
+
+        var andi = new Start('刘德华', 55, '男') // 返回的是一个对象
+        console.log(typeof(andi));
+        console.log(andi.name);
+        console.log(andi['age']);
+        andi.sing('一起走过的日子')
+
+        var jily = new Start('张学友', 65, '男')
+        console.log(jily.name);
+        console.log(jily['age']);
+        jily.sing('吻别')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var date = new Date()
+        console.log(date);
+        var date2 = new Date('1995-12-17T03:24:00');
+        console.log(date2);
+        var date3 = new Date('1996-10-17 08:00:00');
+        console.log(date3);
+        var date4 = new Date(2000, 10, 17);
+        console.log(date4); // 这里返回的是11月
+
+        // 格式化日期
+        var d = new Date()
+        console.log(d.getFullYear()); // 2020
+        console.log(d.getMonth()); // 月份是从0-11  9
+        console.log(d.getMonth() + 1); // 月份是从0-11  10
+        console.log(d.getDate()); // 13号
+        console.log('getDay ' + d.getDay()); // 获取是星期2
+        console.log(d.getHours());
+        console.log(d.getMinutes());
+        console.log(d.getSeconds());
+        var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+        console.log('今天是: ' + d.getFullYear() + '年' + parseInt(d.getMonth() + 1) + '月' + d.getDate() + '日' + d.getHours() + '时' + d.getMinutes() + '分' + d.getSeconds() + '秒' + week[d.getDay()]);
+
+        // 要求封闭一个函数返回当前的时分秒 格式为 08:08:08
+        function returnHour() {
+            var h = d.getHours()
+            h = h < 10 ? '0' + h : h
+            var m = d.getMinutes()
+            m = m < 10 ? '0' + m : m
+            var s = d.getSeconds()
+            s = s < 10 ? '0' + s : s
+            return h + ':' + m + ':' + s
+        }
+
+        console.log(returnHour());
+
+        // 获得date总的毫秒数
+        // 1
+        var d2 = new Date()
+        console.log(d2.getTime());
+        console.log(d2.valueOf());
+        // 2
+        var d1 = +new Date()
+        console.log(d1);
+        // 3. h5新增的
+        console.log(Date.now());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

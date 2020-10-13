@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 得到两个数之间的随机整数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        console.log(getRandom(1, 100));
+
+
+        // 猜数字游戏
+        while (true) {
+            var num = prompt('请输入一个数字: ')
+                // var randomNum;
+                // randomNum = getRandom(1, 5)
+            var randomNum = getRandom(1, 5);
+            console.log(randomNum);
+            if (num == randomNum) {
+                alert('恭喜你猜对了!')
+                break;
+            } else if (num > randomNum) {
+                alert('你猜的数字大于随机数!')
+            } else {
+                alert('你猜的数字小于随机数!')
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>
