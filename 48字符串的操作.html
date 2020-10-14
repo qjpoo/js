@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. concat字符串的连接
+        var a = 'abc'
+        var b = 1;
+        console.log(a.concat(b));
+
+        // 2. substr('起始位置','截取的长度')
+        var c = '你是个渣男吗?'
+        console.log(c.substr(3, 2));
+
+        // 3. replace('被替换的字符', '替换为的字符')
+        console.log(c.replace('男', '女'));
+
+        // 3.1 替换所有的a ,替换成$
+        // var s = 'aaabbbedjfkjfkajfajfajf';
+        // console.log(s.indexOf('a'));
+        // while (s.indexOf('a') !== -1) {
+        //     s = s.replace('a', '$')
+        // }
+        // console.log('xxx', s);
+
+
+
+        // 4. 字符转换为数组 split('分隔符')
+        var d = 'a-b-c-d-e-fg'
+        console.log(d.split('-'));
+
+        // 5. toUpperCase 转变成大写
+        var lower = 'abAlcFde'
+        console.log(lower.toUpperCase());
+
+        // 6. toLowerCase 转变成小写
+        var up = 'ABFc'
+        console.log(up.toLowerCase());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

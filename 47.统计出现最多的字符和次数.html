@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 判断对象是否有某个属性
+        var o = {
+            name: 'chiling',
+            age: 18
+        }
+        console.log(o['name']);
+        if (o['name1']) {
+            console.log('ok');
+        } else {
+            console.log('no');
+        }
+
+        // 判断字符串出现最多次数的字符
+        var str = 'weratayhajkaltyu'
+        var o = {};
+
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i) // 得到的是字符串中的每一个字答
+            if (o[chars]) {
+                o[chars]++
+            } else {
+                o[chars] = 1;
+            }
+        }
+        // console.log(o);
+        var max = 0;
+        var strName = '';
+        for (var k in o) {
+            //console.log(k, o[k]);
+            if (max < o[k]) {
+                max = o[k]
+                strName = k
+            }
+        }
+        console.log(strName, max);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

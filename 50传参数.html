@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 简单类型
+        var x = 0;
+
+        function fn(a) {
+            a = 2;
+            console.log(a); // 2
+        }
+        fn(x)
+        console.log(x); // 0
+
+
+        // 复杂类型
+        function Person(name) {
+            this.name = name
+        }
+
+        function f1(x) {
+            console.log(x.name); // world
+            x.name = 'hello'
+            console.log(x.name); // hello
+        }
+
+        var p = new Person('world')
+
+        console.log(p.name); // world
+
+        f1(p)
+
+        console.log(p.name); // hello
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

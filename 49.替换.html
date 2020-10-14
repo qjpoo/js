@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var s = 'aaabbbedjfkjfkajfajfajf';
+        // console.log(s.indexOf('a'));
+        // while (s.indexOf('a') !== -1) {
+        //     s.replace('a', '$')
+        // }
+        // console.log('xxx', s);
+
+        var s = 'aaaabcdefg'
+            //console.log(s.indexOf('a'));
+        console.log(s.replace('a', '9')); // 9aaabcdefg
+        console.log(s); // aaaabcdefg
+        while (s.indexOf('a') !== -1) {
+            s = s.replace('a', '*') // 注意这里做一个赋值,不然一直循环
+        }
+        console.log(s);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

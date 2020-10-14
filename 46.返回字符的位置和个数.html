@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 统计a的位置和个数
+        var str = 'abcedajkghjklaeratyauioa'
+        console.log(str[2]);
+        var index = str.indexOf('a')
+        var num = 0;
+        while (index != -1) {
+            num++
+            console.log(index);
+            index = str.indexOf('a', index + 1)
+        }
+        //console.log(str.indexOf('a')); // 0
+        console.log('a次数为: ', num);
+
+        // 统计数据arr中字符串出现的次数
+        var arr = ['red', 'green', 'yellow', 'black', 'pink', 'green', 'silver', 'skyblue', 'green']
+            //console.log(arr.indexOf('green'));
+        var n = 0;
+        var index1 = arr.indexOf('green')
+        while (index1 != -1) {
+            console.log(index1);
+            n++;
+            index1 = arr.indexOf('green', index1 + 1)
+        }
+        console.log('green num is : ', n);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
